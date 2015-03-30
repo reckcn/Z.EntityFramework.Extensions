@@ -126,6 +126,7 @@
   <ItemGroup>
     <Content Include="Default.Master" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Z.EntityFramework.Extensions.Demos.SqlServer.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
