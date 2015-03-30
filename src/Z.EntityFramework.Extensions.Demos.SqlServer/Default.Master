@@ -143,9 +143,9 @@
                                 <div><a href="bulkmethods.aspx">Bulk Methods</a></div>
                             </div>
                         </div>
-                        <div><a href="https://github.com/zzzprojects/Z.BulkOperations" target="_blank" class="btn btn-default" style="width: 100%"><span class="glyphicon glyphicon-file"></span>&nbsp;VIEW SOURCES</a></div>
+                        <div><a href="https://github.com/zzzprojects/Z.EntityFramework.Extensions" target="_blank" class="btn btn-default" style="width: 100%"><span class="glyphicon glyphicon-file"></span>&nbsp;VIEW SOURCES</a></div>
                         <br />
-                        <div><a href="https://zbulkoperations.codeplex.com/releases" target="_blank" class="btn btn-default" style="width: 100%"><span class="glyphicon glyphicon-download"></span>&nbsp;DOWNLOADS DEMOS</a></div>
+                        <div><a href="https://zentityframeworkextensions.codeplex.com//releases" target="_blank" class="btn btn-default" style="width: 100%"><span class="glyphicon glyphicon-download"></span>&nbsp;DOWNLOADS DEMOS</a></div>
                     </div>
                 </div>
             </div>
