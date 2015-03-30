@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Z.EntityFramework.Extensions.Demos.SqlServer.Model.Global" Language="C#" %>
