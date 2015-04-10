@@ -1,6 +1,6 @@
 #![Logo](src/logo.png)#
 
-Z.Entity Framework Extensions is the demo version of the Entity framework Extensions library. Innovate with **BulkSaveChanges** and hundreds of other features that'll drastically improve your performances.
+Z.EntityFrameworkExtensions is the demo version of the .NET Entity framework Extensions library. Innovate with **BulkSaveChanges** and hundreds of other features that'll drastically improve your performances.
 
 ---
 
@@ -20,6 +20,6 @@ Z.Entity Framework Extensions is the demo version of the Entity framework Extens
 ---
 
 **Other Products**
-- [Bulk Operations](http://www.zzzprojects.com/bulk-operations/)
-- [Extension Methods](http://www.zzzprojects.com/extension-methods/)
-- [Icon Library](http://www.zzzprojects.com/icon-library/)
+- [.NET Bulk Operations](http://www.zzzprojects.com/bulk-operations/)
+- [.NET Extension Methods](http://www.zzzprojects.com/extension-methods/)
+- [.NET Icon Library](http://www.zzzprojects.com/icon-library/)

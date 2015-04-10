@@ -1,0 +1,307 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Z.EntityFramework.Extensions.Demos.MySqlServer.Default" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <title></title>
+        <meta name="description" content="Bulk Operations library is the most advanced library to perform bulk operations against a database server. Its support all kind of operations like INSERT, UPDATE, DELETE and MERGE and hundreds of useful features.">
+        <link rel="icon" type="image/png" href="http://www.zzzprojects.com/wp-content/themes/Z/images/logo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="http://www.zzzprojects.com/wp-content/themes/Z/plugins/prettify/prettify.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="http://www.zzzprojects.com/wp-content/themes/Z/style.css" />
+    </head>
+    <body onload=" prettyPrint(); ">
+        <nav id="navbar-top" class="navbar navbar-default" role="navigation">
+            <header id="header">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button id="navbar-top-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand">
+                            <a href="http://www.zzzprojects.com/">
+                                <img src="http://www.zzzprojects.com/wp-content/themes/Z/images/logo.png">ZZZ Projects</a>
+                            <!-- breadcrumb item !-->
+                            <span class="navbar-brand-breadcrumb"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp;<a href="http://www.zzzprojects.com/entity-framework-extensions/"> Entity Framework Extensions</a></span>
+                        </div>
+
+                    </div>
+                    <div id="navbar-top-menu" class="collapse navbar-collapse">
+                        <div class="nav navbar-nav navbar-right hidden-xs">
+                            <div>
+                                <span class="item"><a href="http://www.zzzprojects.com/pricing/">Pricing</a></span>
+                                <span class="divider">|</span>
+                                <span class="item"><a href="http://www.zzzprojects.com/contact-us/">Contact Us</a></span>
+                                <span class="divider">|</span>
+                                <span class="item"><a href="http://www.zzzprojects.com/get-a-quote/">Quotes</a></span>
+                                <span class="divider">|</span>
+                                <span class="item"><a href="http://www.zzzprojects.com/wp-login.php">Account</a></span>
+                            </div>
+                        </div>
+                        <ul class="nav navbar-nav visible-xs">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Entity Framework Extensions Pages <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="http://www.zzzprojects.com/entity-framework-extensions/">- Overview</a></li>
+                                    <li><a href="http://www.zzzprojects.com/guides/entity-framework-extensions/index.html">- Guides</a></li>
+                                    <li><a href="http://www.zzzprojects.com/demos/entity-framework-extensions/bulksavechanges.aspx">- Demos</a></li>
+                                    <li><a href="http://zzzprojects.uservoice.com/forums/283924" target="_blank">- UserVoice</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="http://www.zzzprojects.com/entity-framework-extensions/">- Entity Framework Extensions</a></li>
+                                    <li><a href="http://www.zzzprojects.com/bulk-operations/">- Bulk Operations</a></li>
+                                    <li><a href="http://www.zzzprojects.com/extension-methods/">- Extension Methods</a></li>
+                                    <li><a href="http://www.zzzprojects.com/icon-library/">- Icon Library</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://www.zzzprojects.com/sign-up/">Pricing</a></li>
+                            <li><a href="http://www.zzzprojects.com/contact-us/">Contact Us</a></li>
+                            <li><a href="http://www.zzzprojects.com/get-a-quote/">Quotes</a></li>
+                            <li><a href="http://www.zzzprojects.com/login/">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div id="product-header" class="hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-red dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    Products <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="http://www.zzzprojects.com/entity-framework-extensions/">- Entity Framework Extensions</a></li>
+                                    <li><a href="http://www.zzzprojects.com/bulk-operations/">- Bulk Operations</a></li>
+                                    <li><a href="http://www.zzzprojects.com/extension-methods/">- Extension Methods</a></li>
+                                    <li><a href="http://www.zzzprojects.com/icon-library/">- Icon Library</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group hidden-lg hidden-md">
+                                <button type="button" class="btn btn-default btn-red dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    Entity Framework Extensions Pages <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="http://www.zzzprojects.com/entity-framework-extensions/">- Overview</a></li>
+                                    <li><a href="http://www.zzzprojects.com/guides/entity-framework-extensions/index.html">- Guides</a></li>
+                                    <li><a href="http://www.zzzprojects.com/demos/entity-framework-extensions/bulksavechanges.aspx">- Demos</a></li>
+                                    <li><a href="http://zzzprojects.uservoice.com/forums/283924" target="_blank">- UserVoice</a></li>
+                                </ul>
+                            </div>
+
+                            <span class="hidden-sm">
+
+
+                                <span class="divider"></span>
+                                <a href="http://www.zzzprojects.com/entity-framework-extensions/" class="btn btn-default btn-red">Entity Framework Extensions Overview</a>
+                                <span class="divider"></span>
+                                <a href="http://www.zzzprojects.com/guides/entity-framework-extensions/index.html" class="btn btn-default btn-red">Guides</a>
+                                <span class="divider"></span>
+                                <a href="http://www.zzzprojects.com/demos/entity-framework-extensions/bulksavechanges.aspx" class="btn btn-default btn-red">Demos</a>
+                                <span class="divider"></span>
+                                <a href="http://zzzprojects.uservoice.com/forums/283924" target="_blank" class="btn btn-default btn-red">UserVoice</a>
+                            </span>
+
+                        </div>
+                        <div class="col-sm-3 padding-right-0">
+                            <div class="text-align-right">
+                                <a href="http://www.zzzprojects.com/products/" class="btn btn-default btn-red"><span class="glyphicon glyphicon-gift"></span>&nbsp;FREE TRIALS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <form id="uiForm" runat="server">
+            <div class="container section">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <asp:ContentPlaceHolder ID="uiContentHolder" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading bold">Available Demos</div>
+
+                            <div class="panel-body">
+                                <div><a href="bulksavechanges.aspx">BulkSaveChanges</a></div>
+                                <div><a href="bulkmethods.aspx">Bulk Methods</a></div>
+                            </div>
+                        </div>
+                        <div><a href="https://github.com/zzzprojects/Z.EntityFramework.Extensions" target="_blank" class="btn btn-default" style="width: 100%"><span class="glyphicon glyphicon-file"></span>&nbsp;VIEW SOURCES</a></div>
+                        <br />
+                        <div><a href="https://zentityframeworkextensions.codeplex.com//releases" target="_blank" class="btn btn-default" style="width: 100%"><span class="glyphicon glyphicon-download"></span>&nbsp;DOWNLOADS DEMOS</a></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div id="footer">
+
+            <!-- footer-row-1 !-->
+            <div id="footer-row-1">
+                <div class="container text-align-center-xs">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div>
+                                <img src="http://www.zzzprojects.com/wp-content/themes/z/images/wevegotyourback-24x7x365.png" /></div>
+                            <div class="clearfix visible-xs-block">&nbsp;</div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a href="http://zzzprojects.uservoice.com/" class="text-nowrap"><span class="glyphicon glyphicon-bullhorn"></span>&nbsp;UserVoice</a>
+                                </div>
+                                <div class="clearfix visible-xs-block">&nbsp;</div>
+                                <div class="col-sm-4">
+                                    <a href="http://www.zzzprojects.com/contact-us/" class="text-nowrap"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a>
+                                </div>
+                                <div class="clearfix visible-xs-block">&nbsp;</div>
+                                <div class="col-sm-4">
+                                    <a href="http://www.zzzprojects.com/get-a-quote/" class="text-nowrap"><span class="glyphicon glyphicon-edit"></span>&nbsp;Get a Quote</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer-row-2 !-->
+            <div id="footer-row-2">
+                <div class="container">
+                    <h2>Thinking of an extra feature you need for your projects?</h2>
+                    <div class="clearfix visible-xs-block">&nbsp;</div>
+                    <h3>Let us know! Nothing is impossible for us. We'll fulfill your requests in a very short delay.</h3>
+                </div>
+            </div>
+
+            <!-- footer-row-3 !-->
+            <footer id="footer-row-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="header">Projects</div>
+                            <div class="item"><a href="http://www.zzzprojects.com/entity-framework-extensions/">Entity Framework Extensions</a></div>
+                            <div class="item"><a href="http://www.zzzprojects.com/bulk-operations/">Bulk Operations</a></div>
+                            <br />
+                            <div class="header">Open Source Projects</div>
+                            <div class="item"><a href="http://www.zzzprojects.com/extension-methods/">Extension Methods</a></div>
+                            <div class="item"><a href="http://www.zzzprojects.com/icon-library/">Icon Library</a></div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="header">Members</div>
+                                    <div class="item"><a href="http://www.zzzprojects.com/wp-login.php">Account</a></div>
+                                    <div class="item"><a href="http://www.zzzprojects.com/products/">Downloads</a></div>
+                                    <div class="item"><a href="http://www.zzzprojects.com/manage-license/">Manage your license</a></div>
+                                    <div class="item"><a href="http://www.zzzprojects.com/setup-license/">Setup License Key</a></div>
+                                    <div class="item"><a href="http://www.zzzprojects.com/license-agreement/">License Agreement</a></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="header">Support</div>
+                                    <div class="item"><a href="http://zzzprojects.uservoice.com/">UserVoice</a></div>
+                                    <div class="item"><a href="http://www.zzzprojects.com/faq/">FAQ</a></div>
+
+                                    <div class="item"><a href="http://www.zzzprojects.com/about-us/">About Us</a></div>
+
+                                    <br />
+                                    <div class="header">Contacts</div>
+                                    <div class="item"><a href="mailto:sales@zzzprojects.com">sales@zzzprojects.com</a></div>
+                                    <div class="item"><a href="http://www.zzzprojects.com/reseller/">Reseller</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-2">
+                            <div class="header">Connect</div>
+                            <div>
+                                <a href="https://www.facebook.com/zzzprojects" target="_blank">
+                                    <img src="http://www.zzzprojects.com/wp-content/themes/z/images/facebook.png" width="48" alt="Facebook"></a>
+                                <a href="https://www.twitter.com/zzzprojects" target="_blank">
+                                    <img src="http://www.zzzprojects.com/wp-content/themes/z/images/twitter.png" width="48" alt="Twitter"></a>
+                                <a href="http://www.google.com/+Zzzprojects_NetSQL" target="_blank">
+                                    <img src="http://www.zzzprojects.com/wp-content/themes/z/images/googleplus.png" width="48" alt="Google+"></a>
+                            </div>
+                            <br />
+                            <div class="header">Newsletters</div>
+                            <a href="http://eepurl.com/5Dtpv" class="btn btn-default btn-big btn-red" type="submit"><span class="glyphicon glyphicon-envelope"></span>Subscribe!</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- footer-row-4 !-->
+            <div id="footer-row-4">
+                <nav class="navbar navbar-default navbar-bottom text-align-center-xs" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="http://www.zzzprojects.com/">
+                                <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="ZZZ Projects">&nbsp;ZZZ Projects</a>
+                        </div>
+                        <ul class="nav navbar-nav navbar">
+                            <li><span class="navbar-text">Copyright &#169; 2015 ZZZ Projects. All rights reserved.</span></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <div id="google_translate_element"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <style>
+            fieldset > legend {
+                font-size: 24px;
+                font-weight: 700;
+            }
+        </style>
+        
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', autoDisplay: false, gaTrack: true, gaId: 'UA-55584370-1' }, 'google_translate_element');
+            }
+        </script>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments);
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-55584370-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript" src="http://www.zzzprojects.com/wp-content/themes/Z/plugins/prettify/prettify.js"></script>
+        <script type="text/javascript" src="http://www.zzzprojects.com/wp-content/themes/Z/plugins/jqueryvalidation/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
