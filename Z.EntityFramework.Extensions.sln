@@ -9,18 +9,33 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.EntityFramework.Extension
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug SQL_NET20|Any CPU = Debug SQL_NET20|Any CPU
 		Debug|Any CPU = Debug|Any CPU
+		MYSQL|Any CPU = MYSQL|Any CPU
 		Release|Any CPU = Release|Any CPU
+		SQLCE|Any CPU = SQLCE|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56A6860B-AC37-4FBC-86B7-B9ED566845BE}.Debug SQL_NET20|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A6860B-AC37-4FBC-86B7-B9ED566845BE}.Debug SQL_NET20|Any CPU.Build.0 = Debug|Any CPU
 		{56A6860B-AC37-4FBC-86B7-B9ED566845BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{56A6860B-AC37-4FBC-86B7-B9ED566845BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A6860B-AC37-4FBC-86B7-B9ED566845BE}.MYSQL|Any CPU.ActiveCfg = Release|Any CPU
+		{56A6860B-AC37-4FBC-86B7-B9ED566845BE}.MYSQL|Any CPU.Build.0 = Release|Any CPU
 		{56A6860B-AC37-4FBC-86B7-B9ED566845BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56A6860B-AC37-4FBC-86B7-B9ED566845BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56A6860B-AC37-4FBC-86B7-B9ED566845BE}.SQLCE|Any CPU.ActiveCfg = Release|Any CPU
+		{56A6860B-AC37-4FBC-86B7-B9ED566845BE}.SQLCE|Any CPU.Build.0 = Release|Any CPU
+		{BB6DCBB3-8725-4BAF-9366-E0B992DB276D}.Debug SQL_NET20|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB6DCBB3-8725-4BAF-9366-E0B992DB276D}.Debug SQL_NET20|Any CPU.Build.0 = Debug|Any CPU
 		{BB6DCBB3-8725-4BAF-9366-E0B992DB276D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB6DCBB3-8725-4BAF-9366-E0B992DB276D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB6DCBB3-8725-4BAF-9366-E0B992DB276D}.MYSQL|Any CPU.ActiveCfg = Release|Any CPU
+		{BB6DCBB3-8725-4BAF-9366-E0B992DB276D}.MYSQL|Any CPU.Build.0 = Release|Any CPU
 		{BB6DCBB3-8725-4BAF-9366-E0B992DB276D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB6DCBB3-8725-4BAF-9366-E0B992DB276D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB6DCBB3-8725-4BAF-9366-E0B992DB276D}.SQLCE|Any CPU.ActiveCfg = Release|Any CPU
+		{BB6DCBB3-8725-4BAF-9366-E0B992DB276D}.SQLCE|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

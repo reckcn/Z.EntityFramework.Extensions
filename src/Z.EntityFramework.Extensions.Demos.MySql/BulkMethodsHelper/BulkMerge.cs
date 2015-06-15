@@ -38,7 +38,7 @@ namespace Z.EntityFramework.Extensions.Demos.MySqlServer
                 sb.Append(string.Format("INSERT {0} / UPDATE {1} entities", recordsToInsert, recordsToUpdate));
 
                 clock.Start();
-                ctx.BulkUpdate(listToUpdate);
+                ctx.BulkMerge(listToUpdate);
                 clock.Stop();
             }
         }

@@ -61,13 +61,14 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Z.EntityFramework.Extensions, Version=3.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Z.EntityFramework.Extensions, Version=3.6.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Z.EntityFramework.Extensions.3.4.2\lib\Z.EntityFramework.Extensions.dll</HintPath>
+      <HintPath>..\..\packages\Z.EntityFramework.Extensions.3.6.1-beta\lib\Z.EntityFramework.Extensions.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="BulkMethods.aspx" />
+    <Content Include="BulkOperationOptions.aspx" />
     <Content Include="BulkSaveChanges.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -88,6 +89,18 @@
     <Compile Include="BulkMethodsHelper\BulkUpdate.cs" />
     <Compile Include="BulkMethodsHelper\BulkMerge.cs" />
     <Compile Include="BulkMethodsHelper\BulkDelete.cs" />
+    <Compile Include="BulkOperationOptions.aspx.cs">
+      <DependentUpon>BulkOperationOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BulkOperationOptions.aspx.designer.cs">
+      <DependentUpon>BulkOperationOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BulkOperationOptionsHelper\RetryCount.cs" />
+    <Compile Include="BulkOperationOptionsHelper\RetryInterval.cs" />
+    <Compile Include="BulkOperationOptionsHelper\UseLogDump.cs" />
+    <Compile Include="BulkOperationOptionsHelper\Log.cs" />
+    <Compile Include="BulkOperationOptionsHelper\UseAudit.cs" />
     <Compile Include="BulkSaveChanges.aspx.cs">
       <DependentUpon>BulkSaveChanges.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,6 +112,7 @@
     <Compile Include="BulkSaveChangesHelper\SaveChanges.cs" />
     <Compile Include="BulkSaveChangesHelper\BulkSaveChanges.cs" />
     <Compile Include="DbHelper\DbHelper.GetRecordCount.cs" />
+    <Compile Include="DbHelper\DbHelper.SetDemoEntities.cs" />
     <Compile Include="DbHelper\DbHelper.GetRecordSum.cs" />
     <Compile Include="DbHelper\_DbHelper.cs" />
     <Compile Include="Default.aspx.cs">
@@ -134,7 +148,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

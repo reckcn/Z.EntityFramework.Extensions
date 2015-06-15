@@ -1,11 +1,4 @@
-﻿// Copyright (c) 2015 ZZZ Projects. All rights reserved
-// Licensed under MIT License (MIT) (https://github.com/zzzprojects/Z.EntityFramework.Extensions)
-// Full Version: http://www.zzzprojects.com/entity-framework-extensions/
-// Website: http://www.zzzprojects.com/
-// Feedback / Feature Requests / Issues : http://zzzprojects.uservoice.com/forums/283924
-// All ZZZ Projects products: Entity Framework Extensions / Bulk Operations / Extension Methods /Icon Library
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Diagnostics;
 using System.Linq;
@@ -18,12 +11,12 @@ namespace Z.EntityFramework.Extensions.Demos.SqlServer
     {
         public static void BulkMerge(int nbRecords, Stopwatch clock, StringBuilder sb)
         {
-            int recordsToUpdate = nbRecords/2;
-            int recordsToInsert = nbRecords - recordsToUpdate;
+            var recordsToUpdate = nbRecords/2;
+            var recordsToInsert = nbRecords - recordsToUpdate;
 
             var listToInsert = new List<EntitySimple>();
 
-            for (int i = 0; i < recordsToInsert; i++)
+            for (var i = 0; i < recordsToInsert; i++)
             {
                 listToInsert.Add(new EntitySimple {ColumnInt = i%5});
             }
@@ -32,13 +25,16 @@ namespace Z.EntityFramework.Extensions.Demos.SqlServer
             {
                 ctx.EntitySimples.AddRange(listToInsert);
 
-                List<EntitySimple> listToUpdate = ctx.EntitySimples.Take(recordsToUpdate).AsNoTracking().ToList();
+                var listToUpdate = ctx.EntitySimples.Take(recordsToUpdate).AsNoTracking().ToList();
                 listToUpdate.ForEach(x => x.ColumnInt = x.ColumnInt + 1);
+
+                var listToMerge = listToInsert.ToList();
+                listToMerge.AddRange(listToUpdate);
 
                 sb.Append(string.Format("INSERT {0} / UPDATE {1} entities", recordsToInsert, recordsToUpdate));
 
                 clock.Start();
-                ctx.BulkUpdate(listToUpdate);
+                ctx.BulkMerge(listToMerge);
                 clock.Stop();
             }
         }

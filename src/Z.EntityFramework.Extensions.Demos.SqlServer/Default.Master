@@ -66,7 +66,7 @@
                                     <li><a href="http://www.zzzprojects.com/icon-library/">- Icon Library</a></li>
                                 </ul>
                             </li>
-                            <li><a href="http://www.zzzprojects.com/sign-up/">Pricing</a></li>
+                            <li><a href="http://www.zzzprojects.com/pricing/">Pricing</a></li>
                             <li><a href="http://www.zzzprojects.com/contact-us/">Contact Us</a></li>
                             <li><a href="http://www.zzzprojects.com/get-a-quote/">Quotes</a></li>
                             <li><a href="http://www.zzzprojects.com/login/">Login</a></li>
@@ -141,6 +141,7 @@
                             <div class="panel-body">
                                 <div><a href="bulksavechanges.aspx">BulkSaveChanges</a></div>
                                 <div><a href="bulkmethods.aspx">Bulk Methods</a></div>
+                                <div><a href="bulkoperationoptions.aspx">Bulk Operation Options</a></div>
                             </div>
                         </div>
                         <div><a href="https://github.com/zzzprojects/Z.EntityFramework.Extensions" target="_blank" class="btn btn-default" style="width: 100%"><span class="glyphicon glyphicon-file"></span>&nbsp;VIEW SOURCES</a></div>
