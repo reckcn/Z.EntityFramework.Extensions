@@ -61,9 +61,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Z.EntityFramework.Extensions, Version=3.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Z.EntityFramework.Extensions, Version=3.6.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Z.EntityFramework.Extensions.3.6.1-beta\lib\Z.EntityFramework.Extensions.dll</HintPath>
+      <HintPath>..\..\packages\Z.EntityFramework.Extensions.3.6.2\lib\Z.EntityFramework.Extensions.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

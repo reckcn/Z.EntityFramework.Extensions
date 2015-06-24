@@ -20,6 +20,8 @@ Z.EntityFrameworkExtensions is the demo version of the .NET Entity framework Ext
 ---
 
 **Other Products**
-- [.NET Bulk Operations](http://www.zzzprojects.com/bulk-operations/)
+- [.NET Entity Framework Extensions](http://www.zzzprojects.com/entity-framework-extensions/)
+- [.NET Compiler] (http://www.zzzprojects.com/net-compiler/)
+- [SQL.NET] (http://www.zzzprojects.com/sql-net/)
 - [.NET Extension Methods](http://www.zzzprojects.com/extension-methods/)
 - [.NET Icon Library](http://www.zzzprojects.com/icon-library/)
